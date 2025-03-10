@@ -76,7 +76,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Zurich-based <strong className="text-stone-100">Data Science Master's student</strong> at ETH Zurich, with a Bachelor's degree in Electrical Engineering and Information Technology. 
+        I'm a Zurich-based <strong className="text-stone-100">Data Science Masters student</strong> at ETH Zurich, with a Bachelors degree in Electrical Engineering and Information Technology. 
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I enjoy exploring the intersection of **technology and innovation**, and in my free time, I love wakeboarding, climbing, and kitesurfing. 
@@ -103,7 +103,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: Im a passionate Data Science student at ETH Zurich, with a strong foundation in Electrical Engineering and Information Technology. I spent a semester abroad at the National University of Singapore (NUS), broadening my academic and cultural horizons. When I'm not coding or analyzing data, you'll find me wakeboarding, climbing, or kitesurfing.,
+  description: Im a passionate Data Science student at ETH Zurich, with a strong foundation in Electrical Engineering and Information Technology. I spent a semester abroad at the National University of Singapore (NUS), broadening my academic and cultural horizons. When Im not coding or analyzing data, youll find me wakeboarding, climbing, or kitesurfing.,
   aboutItems: [
     { label: 'Location', text: 'Zurich, Switzerland', Icon: MapIcon },
     { label: 'Age', text: '23', Icon: CalendarIcon },
@@ -223,13 +223,13 @@ export const education: TimelineItem[] = [
     date: '2023 - Present',
     location: 'ETH Zurich',
     title: "Master's in Data Science",
-    content: <p>Currently pursuing a Master’s degree in Data Science at ETH Zurich.</p>,
+    content: <p>Currently pursuing a Masters degree in Data Science at ETH Zurich.</p>,
   },
   {
     date: '2019 - 2023',
     location: 'ETH Zurich',
     title: 'BSc Electrical Engineering & Information Technology',
-    content: <p>Earned my Bachelor's degree with a focus on signal processing and AI applications.</p>,
+    content: <p>Earned my Bachelors degree with a focus on signal processing and AI applications.</p>,
   },
   {
     date: 'Spring 2022',

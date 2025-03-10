@@ -1,7 +1,7 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
-  //BuildingOffice2Icon,
+  BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
   MapIcon,
@@ -70,9 +70,9 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 /**
  * Hero section
  */
-export const heroData: Hero= {
+export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Alexander`,
+  name: I'm Alexander Bensland.,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -91,7 +91,7 @@ export const heroData: Hero= {
       Icon: ArrowDownTrayIcon,
     },
     {
-      href: `#${SectionId.Contact}`,
+      href: #${SectionId.Contact},
       text: 'Contact',
       primary: false,
     },
@@ -103,7 +103,7 @@ export const heroData: Hero= {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm a passionate Data Science student at ETH Zurich, with a strong foundation in Electrical Engineering and Information Technology. I spent a semester abroad at the National University of Singapore (NUS), broadening my academic and cultural horizons. When I'm not coding or analyzing data, you'll find me wakeboarding, climbing, or kitesurfing.`,
+  description: Im a passionate Data Science student at ETH Zurich, with a strong foundation in Electrical Engineering and Information Technology. I spent a semester abroad at the National University of Singapore (NUS), broadening my academic and cultural horizons. When I'm not coding or analyzing data, you'll find me wakeboarding, climbing, or kitesurfing.,
   aboutItems: [
     { label: 'Location', text: 'Zurich, Switzerland', Icon: MapIcon },
     { label: 'Age', text: '23', Icon: CalendarIcon },
@@ -285,8 +285,26 @@ export const contact: ContactSection = {
   headerText: 'Get in touch.',
   description: 'Feel free to reach out to me for collaborations, projects, or just to connect!',
   items: [
-    { type: 'Email', text: 'alex.eth@gmail.com', href: 'mailto:alex.eth@gmail.com' },
-    { type: 'Location', text: 'Zurich, Switzerland' },
+    { 
+        type: ContactType.Email, 
+      text: 'alexander.bensland@gmail.com',
+      href: 'alexander.bensland@gmail.com',
+    },
+    {
+        type: ContactType.Location,
+        text: 'Victoria BC, Canada',
+        href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      },
+      {
+        type: ContactType.Instagram,
+        text: '@tbakerx',
+        href: 'https://www.instagram.com/tbakerx/',
+      },
+      {
+        type: ContactType.Github,
+        text: 'tbakerx',
+        href: 'https://github.com/tbakerx',
+    },
   ],
 };
 
@@ -300,3 +318,4 @@ export const socialLinks: Social[] = [
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com'},
 ];
+ 

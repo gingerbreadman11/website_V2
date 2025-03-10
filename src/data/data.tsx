@@ -72,11 +72,11 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: I'm Alexander Bensland.,
+  name: Im Alexander Bensland.,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Zurich-based <strong className="text-stone-100">Data Science Masters student</strong> at ETH Zurich, with a Bachelors degree in Electrical Engineering and Information Technology. 
+        Im a Zurich-based <strong className="text-stone-100">Data Science Masters student</strong> at ETH Zurich, with a Bachelors degree in Electrical Engineering and Information Technology. 
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         I enjoy exploring the intersection of **technology and innovation**, and in my free time, I love wakeboarding, climbing, and kitesurfing. 

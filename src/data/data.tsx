@@ -1,7 +1,7 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
-  BuildingOffice2Icon,
+  //BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
   MapIcon,
@@ -70,7 +70,7 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
 /**
  * Hero section
  */
-export const heroData = {
+export const heroData: Hero= {
   imageSrc: heroImage,
   name: `I'm Alexander`,
   description: (
@@ -101,7 +101,7 @@ export const heroData = {
 /**
  * About section
  */
-export const aboutData = {
+export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I'm a passionate Data Science student at ETH Zurich, with a strong foundation in Electrical Engineering and Information Technology. I spent a semester abroad at the National University of Singapore (NUS), broadening my academic and cultural horizons. When I'm not coding or analyzing data, you'll find me wakeboarding, climbing, or kitesurfing.`,
   aboutItems: [

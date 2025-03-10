@@ -43,12 +43,9 @@ import {
 /**
  * Page meta data
  */
-/**
- * Page meta data
- */
 export const homePageMeta: HomepageMeta = {
-  title: "Alexander's Portfolio",
-  description: "Personal website of Alexander, a Master's student in Data Science at ETH Zurich.",
+  title: 'React Resume Template',
+  description: "Example site built with Alexander Bensland's react resume template",
 };
 
 /**
@@ -72,14 +69,18 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: Im Alexander Bensland.,
+  name: I'm Alexander Bensland.,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Im a Zurich-based <strong className="text-stone-100">Data Science Masters student</strong> at ETH Zurich, with a Bachelors degree in Electrical Engineering and Information Technology. 
+        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
+        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
+        registrar and site builder.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I enjoy exploring the intersection of **technology and innovation**, and in my free time, I love wakeboarding, climbing, and kitesurfing. 
+        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
+        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
+        <strong className="text-stone-100">Vancouver Island</strong>.
       </p>
     </>
   ),
@@ -103,13 +104,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: Im a passionate Data Science student at ETH Zurich, with a strong foundation in Electrical Engineering and Information Technology. I spent a semester abroad at the National University of Singapore (NUS), broadening my academic and cultural horizons. When Im not coding or analyzing data, youll find me wakeboarding, climbing, or kitesurfing.,
+  description: Use this bio section as your way of describing yourself and saying what you do, what technologies you like
+  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
+  in.,
   aboutItems: [
-    { label: 'Location', text: 'Zurich, Switzerland', Icon: MapIcon },
-    { label: 'Age', text: '23', Icon: CalendarIcon },
-    { label: 'Study', text: 'ETH Zurich (MSc Data Science)', Icon: AcademicCapIcon },
-    { label: 'Exchange Program', text: 'NUS, Singapore', Icon: FlagIcon },
-    { label: 'Interests', text: 'Wakeboarding, Climbing, Kitesurfing', Icon: SparklesIcon },
+    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
+    {label: 'Age', text: '29', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
+    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -118,27 +122,71 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Programming Languages',
+    name: 'Spoken languages',
     skills: [
-      { name: 'Python', level: 9 },
-      { name: 'SQL', level: 8 },
-      { name: 'JavaScript', level: 7 },
+      {
+        name: 'English',
+        level: 10,
+      },
+      {
+        name: 'French',
+        level: 4,
+      },
+      {
+        name: 'Spanish',
+        level: 3,
+      },
     ],
   },
   {
-    name: 'Machine Learning & Data Science',
+    name: 'Frontend development',
     skills: [
-      { name: 'TensorFlow / PyTorch', level: 8 },
-      { name: 'Data Visualization (Matplotlib, Seaborn)', level: 7 },
-      { name: 'Big Data (Spark, Hadoop)', level: 6 },
+      {
+        name: 'React',
+        level: 9,
+      },
+      {
+        name: 'Typescript',
+        level: 7,
+      },
+      {
+        name: 'GraphQL',
+        level: 6,
+      },
     ],
   },
   {
-    name: 'Cloud & Backend',
+    name: 'Backend development',
     skills: [
-      { name: 'AWS', level: 6 },
-      { name: 'Docker', level: 7 },
-      { name: 'PostgreSQL', level: 8 },
+      {
+        name: 'Node.js',
+        level: 8,
+      },
+      {
+        name: 'Rust',
+        level: 5,
+      },
+      {
+        name: 'Golang',
+        level: 4,
+      },
+    ],
+  },
+  {
+    name: 'Mobile development',
+    skills: [
+      {
+        name: 'React Native',
+        level: 9,
+      },
+      {
+        name: 'Flutter',
+        level: 4,
+      },
+      {
+        name: 'Swift',
+        level: 3,
+      },
     ],
   },
 ];
@@ -220,43 +268,39 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: '2023 - Present',
-    location: 'ETH Zurich',
-    title: "Master's in Data Science",
-    content: <p>Currently pursuing a Masters degree in Data Science at ETH Zurich.</p>,
+    date: 'April 2007',
+    location: 'Clown college',
+    title: 'Masters in Beer tasting',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
   {
-    date: '2019 - 2023',
-    location: 'ETH Zurich',
-    title: 'BSc Electrical Engineering & Information Technology',
-    content: <p>Earned my Bachelors degree with a focus on signal processing and AI applications.</p>,
-  },
-  {
-    date: 'Spring 2022',
-    location: 'National University of Singapore',
-    title: 'Exchange Semester',
-    content: <p>Spent a semester at NUS, exploring global perspectives on technology and innovation.</p>,
+    date: 'March 2003',
+    location: 'School of Business',
+    title: 'What did you study 101',
+    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
     date: 'March 2010 - Present',
-    location: 'this is wrong',
-    title: 'Quant finance Bro',
+    location: 'Awesome Development Company',
+    title: 'Senior UX Engineer',
     content: (
       <p>
-        Hello you found me :).
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
       </p>
     ),
   },
   {
     date: 'March 2007 - February 2010',
     location: 'Garage Startup Studio',
-    title: 'hmmmmm',
+    title: 'Junior bug fixer',
     content: (
       <p>
-        Here I am again.
+        Describe work, special projects, notable achievements, what technologies you have been working with, and
+        anything else that would be useful for an employer to know.
       </p>
     ),
   },
@@ -269,11 +313,20 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'JOE',
-      text: 'He is kinda trash ngl',
+      name: 'John Doe',
+      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
-    
+    {
+      name: 'Jane Doe',
+      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+    },
+    {
+      name: 'Someone else',
+      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
+    },
   ],
 };
 
@@ -283,27 +336,27 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Feel free to reach out to me for collaborations, projects, or just to connect!',
+  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
   items: [
-    { 
-        type: ContactType.Email, 
+    {
+      type: ContactType.Email,
       text: 'alexander.bensland@gmail.com',
       href: 'alexander.bensland@gmail.com',
     },
     {
-        type: ContactType.Location,
-        text: 'Victoria BC, Canada',
-        href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-      },
-      {
-        type: ContactType.Instagram,
-        text: '@tbakerx',
-        href: 'https://www.instagram.com/tbakerx/',
-      },
-      {
-        type: ContactType.Github,
-        text: 'tbakerx',
-        href: 'https://github.com/tbakerx',
+      type: ContactType.Location,
+      text: 'Victoria BC, Canada',
+      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+    },
+    {
+      type: ContactType.Instagram,
+      text: '@tbakerx',
+      href: 'https://www.instagram.com/tbakerx/',
+    },
+    {
+      type: ContactType.Github,
+      text: 'tbakerx',
+      href: 'https://github.com/tbakerx',
     },
   ],
 };

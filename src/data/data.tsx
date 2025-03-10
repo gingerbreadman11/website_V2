@@ -47,7 +47,7 @@ import {
  * Page meta data
  */
 export const homePageMeta = {
-  title: 'Alexander's Portfolio',
+  title: "Alexander's Portfolio",
   description: "Personal website of Alexander, a Master's student in Data Science at ETH Zurich.",
 };
 
@@ -222,7 +222,7 @@ export const education: TimelineItem[] = [
   {
     date: '2023 - Present',
     location: 'ETH Zurich',
-    title: 'Master's in Data Science',
+    title: "Master's in Data Science",
     content: <p>Currently pursuing a Master’s degree in Data Science at ETH Zurich.</p>,
   },
   {

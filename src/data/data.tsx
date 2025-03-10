@@ -47,7 +47,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'Alexanders Portfolio,
+  title: 'Alexanders Portfolio',
   description: "Personal website of Alexander, a Master's student in Data Science at ETH Zurich.",
 };
 

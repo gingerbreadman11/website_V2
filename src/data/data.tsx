@@ -105,11 +105,11 @@ export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `Im a passionate Data Science student at ETH Zurich, with a strong foundation in Electrical Engineering and Information Technology. I spent a semester abroad at the National University of Singapore NUS, broadening my academic and cultural horizons. When Im not coding or analyzing data, youll find me wakeboarding, climbing, or kitesurfing.`,
   aboutItems: [
-    { label: 'Location', text: 'Zurich, Switzerland', Icon: MapIcon },
-    { label: 'Age', text: '23', Icon: CalendarIcon },
-    { label: 'Study', text: 'ETH Zurich (MSc Data Science)', Icon: AcademicCapIcon },
-    { label: 'Exchange Program', text: 'NUS, Singapore', Icon: FlagIcon },
-    { label: 'Interests', text: 'Wakeboarding, Climbing, Kitesurfing', Icon: SparklesIcon },
+      {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
+      {label: 'Age', text: '29', Icon: CalendarIcon},
+      {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
+      {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
+      {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
     {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
   ],
 };

@@ -110,6 +110,7 @@ export const aboutData: About = {
     { label: 'Study', text: 'ETH Zurich (MSc Data Science)', Icon: AcademicCapIcon },
     { label: 'Exchange Program', text: 'NUS, Singapore', Icon: FlagIcon },
     { label: 'Interests', text: 'Wakeboarding, Climbing, Kitesurfing', Icon: SparklesIcon },
+    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
   ],
 };
 
